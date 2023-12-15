@@ -1,6 +1,20 @@
 import Image from 'next/image'
+import {mockData} from "./utils";
 
-export default function Home() {
+export default async function Home() {
+
+  let dataObject;
+
+  if (process.env.IS_MOCK_DATA) {
+    console.log(`isMockData: ${process.env.IS_MOCK_DATA}`)
+    dataObject = mockData
+    console.log('the mock data:', dataObject)
+  } else {
+    const response = await fetch('https://informer-production.up.railway.app/item')
+    const dataObject = await response.json()
+    console.log(dataObject)
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
