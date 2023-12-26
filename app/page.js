@@ -2,24 +2,17 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import {mockData} from "./utils";
 import { Loader } from "@googlemaps/js-api-loader"
+import {PageName} from "../components/PageName";
+import {RatingAndReviewsCount} from "../components/RatingAndReviewsCount";
+import {MapCard} from "../components/MapCard";
+import {Rankings} from "../components/Rankings";
 
-const loader = new Loader({
-  apiKey: process.env.API_KEY,
-  version: "weekly",
-});
-
-loader.load().then(async () => {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-});
 
 export default async function Home() {
 
   let dataObject;
+
+  let keyStr;
 
   if (process.env.IS_MOCK_DATA) {
     console.log(`isMockData: ${process.env.IS_MOCK_DATA}`)
@@ -33,24 +26,22 @@ export default async function Home() {
 
   return (
       <div className="grid-container">
-        <div className="container-a" style={{
-          display: 'grid',
-          placeItems: 'center',
-          height: '100%'  // Or any specific height as needed
-        }}>
-          <h1 style={{ color: 'white', fontWeight: 'bold', fontFamily: 'Georgia, serif', fontSize: '2rem' }}>Informer</h1>
-        </div>
-        <div className="container-b" style={{
-          display: 'grid',
-          placeItems: 'center',
-          height: '100%'  // Or any specific height as needed
-        }}>
-          <h1 style={{ color: 'black', fontWeight: 'bold', fontFamily: 'Georgia, serif', fontSize: '2rem' }}>Rating: {dataObject.result.rating} - N°Reviews: {dataObject.result.user_ratings_total}</h1>
-        </div>
+        <PageName/>
+        <RatingAndReviewsCount dataObject={dataObject}/>
         <div className="container-c"></div>
-        <div className="container-d"></div>
-        <div className="container-e"></div>
-        <div className="container-f"></div>
+        <div className="container-d">
+          <div className="container-db">
+            <Image
+              src='/public/berlin.jpg'
+              width='1020'
+              height='1327'
+              layout='responsive'
+              alt='berlin'
+            />
+          </div>
+        </div>
+        {/*<MapCard coordinates={dataObject.result.geometry.location} />*/}
+        <Rankings/>
       </div>
   )
 }

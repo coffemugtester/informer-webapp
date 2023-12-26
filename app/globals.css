@@ -50,7 +50,18 @@ html {
   grid-column-end: 13;
   grid-row-start: 3;
   grid-row-end: 7;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-rows: 3rem repeat(8, 1fr) 3rem;*/
 }
+
+.container-db {
+  border-width: 5px;
+  border-color: red;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 .container-e {
   border-radius: 10px;
   background-color: whitesmoke;
