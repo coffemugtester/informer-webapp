@@ -14,7 +14,7 @@ html {
   min-height: 90vh;
   display: grid;
   grid-template-columns: 3rem repeat(12, 1fr) 3rem;
-  grid-template-rows: 3rem repeat(8, 1fr) 3rem;
+  grid-template-rows: 4rem repeat(8, 1fr) 3rem;
   padding: 1rem;
   gap: 1rem;
 }
@@ -22,33 +22,33 @@ html {
 .container-a {
   border-radius: 10px;
   background-color: black;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .container-b {
   border-radius: 10px;
   background-color: whitesmoke;
   grid-column-start: 7;
-  grid-column-end: 13;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .container-c {
   border-radius: 10px;
   background-color: whitesmoke;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 7;
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-row-end: 7;
 }
 .container-d {
   border-radius: 10px;
   background-color: whitesmoke;
   grid-column-start: 7;
-  grid-column-end: 13;
-  grid-row-start: 3;
+  grid-column-end: 14;
+  grid-row-start: 2;
   grid-row-end: 7;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,16 +72,16 @@ html {
 .container-e {
   border-radius: 10px;
   background-color: whitesmoke;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 10;
   grid-row-start: 7;
-  grid-row-end: 9;
+  grid-row-end: 10;
 }
 .container-f {
   border-radius: 10px;
   background-color: #3F6E5B;
   grid-column-start: 10;
-  grid-column-end: 13;
+  grid-column-end: 14;
   grid-row-start: 7;
-  grid-row-end: 9;
+  grid-row-end: 10;
 }
