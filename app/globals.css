@@ -56,10 +56,12 @@ html {
 }
 
 .container-db {
-  border-width: 5px;
-  border-color: red;
   grid-column-start: 2;
   grid-column-end: 3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .container-e {

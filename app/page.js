@@ -31,12 +31,17 @@ export default async function Home() {
         <div className="container-c"></div>
         <div className="container-d">
           <div className="container-db">
-            <Image
-              src='/public/berlin.jpg'
-              width='1020'
-              height='1327'
-              layout='responsive'
+            <img
+              src='/berlin.jpg'
+              height='1020'
+              width='1327'
               alt='berlin'
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover', // This makes the image cover the full area of the div
+                objectPosition: 'center' // Adjust the alignment of the image
+              }}
             />
           </div>
         </div>
