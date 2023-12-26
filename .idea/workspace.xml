@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,11 @@
       <workItem from="1702835333389" duration="2411000" />
       <workItem from="1702891201116" duration="27000" />
       <workItem from="1702938051045" duration="227000" />
-      <workItem from="1702938294871" duration="2571000" />
+      <workItem from="1702938294871" duration="3032000" />
+      <workItem from="1702942898946" duration="152000" />
+      <workItem from="1702943127040" duration="513000" />
+      <workItem from="1703113490178" duration="5077000" />
+      <workItem from="1703545285633" duration="4388000" />
     </task>
     <servers />
   </component>
