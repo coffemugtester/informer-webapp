@@ -31,7 +31,7 @@ export default async function Home() {
         }}>
           <ul>
             {dataObject.result.opening_hours.periods.map((period)=>{
-              return <li>{period.close.day}: open at period {period.open.time} & closed {period.close.time}</li>
+              return <li key={period.close.day}>{period.close.day}: open at period {period.open.time} & closed {period.close.time}</li>
             })}
           </ul>
         </div>
