@@ -55,6 +55,11 @@ html {
   /*grid-template-rows: 3rem repeat(8, 1fr) 3rem;*/
 }
 
+.container-da {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
 .container-db {
   grid-column-start: 2;
   grid-column-end: 3;

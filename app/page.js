@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import {mockData} from "./utils";
-import { Loader } from "@googlemaps/js-api-loader"
 import {PageName} from "../components/PageName";
 import {RatingAndReviewsCount} from "../components/RatingAndReviewsCount";
 import {MapCard} from "../components/MapCard";
@@ -11,8 +9,6 @@ import {Rankings} from "../components/Rankings";
 export default async function Home() {
 
   let dataObject;
-
-  let keyStr;
 
   if (process.env.IS_MOCK_DATA) {
     console.log(`isMockData: ${process.env.IS_MOCK_DATA}`)
@@ -28,8 +24,25 @@ export default async function Home() {
       <div className="grid-container">
         <PageName/>
         <RatingAndReviewsCount dataObject={dataObject}/>
-        <div className="container-c"></div>
+        <div className="container-c" style={{
+          display: 'grid',
+          placeItems: 'center',
+          height: '100%'  // Or any specific height as needed
+        }}>
+          <ul>
+            {dataObject.result.opening_hours.periods.map((period)=>{
+              return <li>{period.close.day}: open at period {period.open.time} & closed {period.close.time}</li>
+            })}
+          </ul>
+        </div>
         <div className="container-d">
+          <div className='container-da' style={{
+            display: 'grid',
+            placeItems: 'center',
+            height: '100%'  // Or any specific height as needed
+          }}>
+            <h2 style={{ color: 'black', fontWeight: 'bold', fontFamily: 'Georgia, serif', fontSize: '1.5rem' }}>{dataObject.result.formatted_address}</h2>
+          </div>
           <div className="container-db">
             <img
               src='/berlin.jpg'
@@ -45,7 +58,7 @@ export default async function Home() {
             />
           </div>
         </div>
-        {/*<MapCard coordinates={dataObject.result.geometry.location} />*/}
+        <MapCard coordinates={dataObject.result.geometry.location} />
         <Rankings/>
       </div>
   )
