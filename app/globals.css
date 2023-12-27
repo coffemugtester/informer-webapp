@@ -34,6 +34,9 @@ html {
   grid-column-end: 14;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.6rem auto 0.6rem;
 }
 .container-c {
   border-radius: 10px;
@@ -58,6 +61,9 @@ html {
 .container-da {
   grid-column-start: 1;
   grid-column-end: 2;
+  display: grid;
+  grid-template-rows: 1.5fr repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .container-db {
