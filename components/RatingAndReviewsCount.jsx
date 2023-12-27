@@ -19,10 +19,6 @@ export const RatingAndReviewsCount = ({dataObject}) => {
             <span style={{fontSize: '1rem'}}> (opiniones)</span>
           </h2>
         </div>
-        {/*
-        <h1 style={{ color: 'black', fontWeight: 'bold', fontFamily: '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif', fontSize: '2rem' }}>Rating: {dataObject.result.rating} - N°Reviews: {dataObject.result.user_ratings_total}</h1>
-
-        */}
       </div>
   )
 }
