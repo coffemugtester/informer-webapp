@@ -8,18 +8,11 @@ import {MainCard} from "../components/MainCard";
 import {WorkingHoursCard} from "../components/WorkingHoursCard";
 
 export default async function Home() {
-  //TODO: fix variables' names
-  let embassyData;
 
-  //TODO: wrap this conditionals in functions in a utils.js
-  if (process.env.IS_MOCK_DATA) {
-    console.log(`isMockData: ${process.env.IS_MOCK_DATA}`)
-    embassyData = mockData
-    console.log('the mock data:', embassyData)
-  } else {
-    const response = await fetch('https://informer-production.up.railway.app/item')
-    const embassyData = await response.json()
-    console.log(embassyData)
+  const {embassyData, err} = await getEmbassyData(process.env.IS_MOCK_DATA === 'true')
+  if (err) {
+    console.log('Error getting the data', err)
+    return <div>ERROR</div>
   }
 
   return (
@@ -28,8 +21,31 @@ export default async function Home() {
         <RatingAndReviewsCount embassyData={embassyData}/>
         <WorkingHoursCard embassyData={embassyData}/>
         <MainCard embassyData={embassyData}/>
-        {/*<MapCard coordinates={embassyData.result.geometry.location}/>*/}
+        <MapCard coordinates={embassyData.result.geometry.location}/>
         <Rankings/>
       </>
   )
+}
+
+async function getEmbassyData(useMockData) {
+
+  if (useMockData) {
+    return {embassyData: mockData, err: null}
+  } else {
+    try {
+      const response = await fetch('https://informer-production.up.railway.app/item')
+      const embassyData = await response.json()
+      //if (response.headers.get('content-type') === 'application/json') { embassyData = response.json()}
+      if (response.ok) {
+        console.log(`isMockData: ${useMockData} -`, embassyData)
+        return {embassyData, err: null}
+      } else {
+        console.log('ERROR - API returned error code', response.statusCode, response.url)
+        return {data: null, err: true}
+      }
+    } catch (err) {
+      console.log('ERROR - failed to fetch', err)
+      return {data: null, err: true}
+    }
+  }
 }
