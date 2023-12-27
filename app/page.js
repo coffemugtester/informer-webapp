@@ -5,7 +5,7 @@ import {RatingAndReviewsCount} from "../components/RatingAndReviewsCount";
 import {MapCard} from "../components/MapCard";
 import {Rankings} from "../components/Rankings";
 import {MainCard} from "../components/MainCard";
-
+import {WorkingHoursCard} from "../components/WorkingHoursCard";
 
 export default async function Home() {
 
@@ -25,19 +25,9 @@ export default async function Home() {
       <div className="grid-container">
         <PageName/>
         <RatingAndReviewsCount dataObject={dataObject}/>
-        <div className="container-c" style={{
-          display: 'grid',
-          placeItems: 'center',
-          height: '100%'  // Or any specific height as needed
-        }}>
-          <ul>
-            {dataObject.result.opening_hours.periods.map((period)=>{
-              return <li key={period.close.day}>{period.close.day}: open at period {period.open.time} & closed {period.close.time}</li>
-            })}
-          </ul>
-        </div>
+        <WorkingHoursCard dataObject={dataObject}/>
         <MainCard dataObject={dataObject}/>
-        {/*<MapCard coordinates={dataObject.result.geometry.location}/>*/}
+        <MapCard coordinates={dataObject.result.geometry.location}/>
         <Rankings/>
       </div>
   )
