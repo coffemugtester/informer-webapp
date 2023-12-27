@@ -3,7 +3,7 @@
 import React, {useEffect} from "react";
 import {Loader} from "@googlemaps/js-api-loader";
 
-export const MapCard = ({coordinates}) => {
+export const MapCard = ({location}) => {
 
   const mapRef = React.useRef(null);
 
@@ -18,8 +18,8 @@ export const MapCard = ({coordinates}) => {
       //set up the map
       const map = new Map(mapRef.current, {
         center: {
-          lat: coordinates.lat,
-          lng: coordinates.lng
+          lat: location.lat,
+          lng: location.lng
         },
         zoom: 17,
         mapId: 'MY_MAP_ID'

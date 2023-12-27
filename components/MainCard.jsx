@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MainCard = ({embassyData}) => {
+export const MainCard = ({formattedAddress, rating}) => {
   return (
       <div className="container-d">
         <div className='container-da' style={{
@@ -9,7 +9,7 @@ export const MainCard = ({embassyData}) => {
         }}>
           <div style={{gridRowStart: 1, gridRowEnd: 2, paddingTop: '0.75rem', }}>
             <h2 style={{fontWeight: '500', fontFamily: '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif', fontSize: '2rem', textAlign: 'left', paddingLeft: '2rem', paddingTop: '0.75rem'}}>Embajada de España,</h2>
-            <p style={{fontFamily: '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif', fontSize: '1rem', paddingLeft: '2rem' }}>{embassyData.result.formatted_address}</p>
+            <p style={{fontFamily: '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif', fontSize: '1rem', paddingLeft: '2rem' }}>{formattedAddress}</p>
           </div>
           <div style={{
             gridRowStart: 2,
@@ -41,7 +41,7 @@ export const MainCard = ({embassyData}) => {
             gridTemplateColumns: '1fr 1fr',
             placeItems: 'center',
           }}>
-            <p style={{color: 'white', gridColumnStart: 1, gridRowStart: 2, gridRowEnd: 3}}>{embassyData.result.rating}/5 <span style={{fontSize: '0.75rem'}}>(valoración promedia)</span></p>
+            <p style={{color: 'white', gridColumnStart: 1, gridRowStart: 2, gridRowEnd: 3}}>{rating}/5 <span style={{fontSize: '0.75rem'}}>(valoración promedia)</span></p>
             <div style={{gridRowStart: 2 , gridColumnStart: 2, display: 'grid', gridTemplateRows: '1fr 1fr'}}>
               <p style={{color: 'white'}}> - hrs. - Otras misiones</p>
               <p style={{color: 'white'}}> - hrs. - Otros países</p>
