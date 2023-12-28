@@ -7,14 +7,12 @@
     <list default="true" id="17e3b4ae-614e-4479-85cb-135e0057e940" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainCard/MainCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MapCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MapCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PageName.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PageName.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Rankings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Rankings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RatingAndReviewsCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RatingAndReviewsCount.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WorkingHoursCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/WorkingHoursCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MainCard/MainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainCard/MainCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MapCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MapCard/MapCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PageName.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PageName/PageName.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Rankings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Rankings/Rankings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RatingAndReviewsCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RatingAndReviewsCount/RatingAndReviewsCount.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/WorkingHoursCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/WorkingHoursCard/WorkingHoursCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,11 +63,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/MainCard" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/app/api/todo" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/components/MapCard" />
+      <recent name="$PROJECT_DIR$/components/PageName" />
+      <recent name="$PROJECT_DIR$/components/Rankings" />
+      <recent name="$PROJECT_DIR$/components/RatingAndReviewsCount" />
+      <recent name="$PROJECT_DIR$/components/WorkingHoursCard" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -123,7 +121,7 @@
       <workItem from="1702943127040" duration="513000" />
       <workItem from="1703113490178" duration="5077000" />
       <workItem from="1703545285633" duration="4388000" />
-      <workItem from="1703760896357" duration="4295000" />
+      <workItem from="1703760896357" duration="11111000" />
     </task>
     <servers />
   </component>

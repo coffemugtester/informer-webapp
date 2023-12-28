@@ -2,8 +2,8 @@ import React from "react";
 
 const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
   return (
-      <div className="ratingAndReviewsCount" style={{placeItems: 'center'}} >
-        <div style={{width: '100%', gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 2, gridRowEnd: 3, borderRight: '1px solid silver', textAlign: 'center', fontSize: '1.2rem'}}>
+      <div className="ratingAndReviewsCount" >
+        <div className='ratings'>
           <h2>
             <span className="material-symbols-outlined" style={{verticalAlign: 'middle', fontSize: '1.5rem', paddingBottom: '0.3rem'}}>sentiment_neutral</span>&nbsp;
             {rating}/5
@@ -12,7 +12,7 @@ const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
             <span className="material-symbols-outlined" style={{fontSize: '1.2rem'}}>grade</span>
           </h2>
         </div>
-        <div style={{width: '100%', gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 2, gridRowEnd: 3, textAlign: 'center', fontSize: '1.2rem'}}>
+        <div className='reviewsCount'>
           <h2>
             <span className="material-symbols-outlined" style={{verticalAlign: 'middle', fontSize: '1.5rem'}}>rate_review</span>&nbsp;
             {userRatingsTotal}

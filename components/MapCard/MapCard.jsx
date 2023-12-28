@@ -9,8 +9,6 @@ const MapCard = ({location}) => {
 
   useEffect(() => {
     const initMap = async () => {
-      console.log('map init')
-      console.log(process.env.API_KEY)
       const loader = new Loader({apiKey: process.env.NEXT_PUBLIC_API_KEY, version: 'weekly'});
 
       const { Map } = await loader.importLibrary('maps');
