@@ -2,7 +2,7 @@ import React from "react";
 
 const PageName = () => {
   return (
-      <div className="container-a" style={{
+      <div className="pageName" style={{
         display: 'grid',
         placeItems: 'center',
         height: '100%'  // Or any specific height as needed

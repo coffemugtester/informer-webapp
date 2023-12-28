@@ -4,7 +4,7 @@ const days = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Doming
 
 const WorkingHoursCard = ({periods}) => {
   return (
-      <div className="container-c" style={{
+      <div className="workingHoursCard" style={{
         display: 'grid',
         placeItems: 'center',
         height: '100%',  // Or any specific height as needed

@@ -31,7 +31,7 @@ const MapCard = ({location}) => {
   }, [])
 
   return (
-      <div className="container-e" ref={mapRef}></div>
+      <div className="mapCard" ref={mapRef}></div>
   )
 }
 

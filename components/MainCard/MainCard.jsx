@@ -2,8 +2,8 @@ import React from "react";
 
 const MainCard = ({formattedAddress, rating}) => {
   return (
-      <div className="container-d">
-        <div className='container-da' style={{
+      <div className="mainCard">
+        <div className='mainCardLeft' style={{
           display: 'grid',
           height: '100%'  // Or any specific height as needed
         }}>
@@ -48,7 +48,7 @@ const MainCard = ({formattedAddress, rating}) => {
             </div>
           </div>
         </div>
-        <div className="container-db">
+        <div className="mainCardRight">
           <img
               src='/berlin.jpg'
               height='1020'

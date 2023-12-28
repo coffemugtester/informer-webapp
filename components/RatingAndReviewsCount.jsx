@@ -2,7 +2,7 @@ import React from "react";
 
 const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
   return (
-      <div className="container-b" style={{placeItems: 'center'}} >
+      <div className="ratingAndReviewsCount" style={{placeItems: 'center'}} >
         <div style={{width: '100%', gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 2, gridRowEnd: 3, borderRight: '1px solid silver', textAlign: 'center', fontSize: '1.2rem'}}>
           <h2>
             <span className="material-symbols-outlined" style={{verticalAlign: 'middle', fontSize: '1.5rem', paddingBottom: '0.3rem'}}>sentiment_neutral</span>&nbsp;

@@ -27,7 +27,7 @@ export default async function Home() {
             formattedAddress={embassyData.result.formatted_address}
             rating={embassyData.result.rating}
         />
-        <MapCard location={embassyData.result.geometry.location}/>
+        {/*<MapCard location={embassyData.result.geometry.location}/>*/}
         <Rankings/>
       </>
   )

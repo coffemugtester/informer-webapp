@@ -1,4 +1,4 @@
-export {default as MainCard} from './MainCard.jsx';
+export {default as MainCard} from './MainCard/MainCard.jsx';
 export {default as MapCard} from './MapCard.jsx';
 export {default as PageName} from './PageName.jsx';
 export {default as RatingAndReviewsCount} from './RatingAndReviewsCount.jsx';

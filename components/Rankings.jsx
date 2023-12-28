@@ -2,7 +2,7 @@ import React from "react";
 
 const Rankings = () => {
   return (
-      <div className="container-f" style={{
+      <div className="rankings" style={{
         display: 'grid',
         placeItems: 'center',
         height: '100%',  // Or any specific height as needed
