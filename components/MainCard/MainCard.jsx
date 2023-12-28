@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const MainCard = ({formattedAddress, rating}) => {
   return (
@@ -24,11 +25,12 @@ const MainCard = ({formattedAddress, rating}) => {
           </div>
         </div>
         <div className="mainCardRight">
-          <img
+          <Image
               src='/berlin.jpg'
               height='1020'
               width='1327'
               alt='berlin'
+              style={{objectFit: 'cover', objectPosition: 'center'}}
           />
         </div>
       </div>

@@ -13,7 +13,6 @@ const MapCard = ({location}) => {
 
       const { Map } = await loader.importLibrary('maps');
 
-      //set up the map
       const map = new Map(mapRef.current, {
         center: {
           lat: location.lat,
@@ -26,7 +25,7 @@ const MapCard = ({location}) => {
     }
 
     initMap();
-  }, [])
+  })
 
   return (
       <div className="mapCard" ref={mapRef}></div>
