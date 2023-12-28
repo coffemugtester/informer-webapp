@@ -1,11 +1,11 @@
 import styles from './page.module.css'
 import {mockData} from "./utils";
-import {PageName} from "../components/PageName";
-import {RatingAndReviewsCount} from "../components/RatingAndReviewsCount";
-import {MapCard} from "../components/MapCard";
-import {Rankings} from "../components/Rankings";
-import {MainCard} from "../components/MainCard";
-import {WorkingHoursCard} from "../components/WorkingHoursCard";
+import {
+  MainCard, MapCard,
+  PageName, Rankings,
+  RatingAndReviewsCount,
+  WorkingHoursCard
+} from "../components";
 
 export default async function Home() {
 

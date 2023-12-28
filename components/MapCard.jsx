@@ -3,7 +3,7 @@
 import React, {useEffect} from "react";
 import {Loader} from "@googlemaps/js-api-loader";
 
-export const MapCard = ({location}) => {
+const MapCard = ({location}) => {
 
   const mapRef = React.useRef(null);
 
@@ -34,3 +34,5 @@ export const MapCard = ({location}) => {
       <div className="container-e" ref={mapRef}></div>
   )
 }
+
+export default MapCard;

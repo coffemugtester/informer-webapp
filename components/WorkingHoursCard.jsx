@@ -2,7 +2,7 @@ import React from "react";
 
 const days = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo']
 
-export const WorkingHoursCard = ({periods}) => {
+const WorkingHoursCard = ({periods}) => {
   return (
       <div className="container-c" style={{
         display: 'grid',
@@ -26,3 +26,5 @@ export const WorkingHoursCard = ({periods}) => {
 
   )
 }
+
+export default WorkingHoursCard;

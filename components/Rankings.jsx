@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Rankings = () => {
+const Rankings = () => {
   return (
       <div className="container-f" style={{
         display: 'grid',
@@ -16,3 +16,5 @@ export const Rankings = () => {
       </div>
   )
 }
+
+export default Rankings;

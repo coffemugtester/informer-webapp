@@ -1,6 +1,6 @@
 import React from "react";
 
-export const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
+const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
   return (
       <div className="container-b" style={{placeItems: 'center'}} >
         <div style={{width: '100%', gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 2, gridRowEnd: 3, borderRight: '1px solid silver', textAlign: 'center', fontSize: '1.2rem'}}>
@@ -22,3 +22,5 @@ export const RatingAndReviewsCount = ({userRatingsTotal, rating}) => {
       </div>
   )
 }
+
+export default RatingAndReviewsCount;

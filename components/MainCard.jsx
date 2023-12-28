@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MainCard = ({formattedAddress, rating}) => {
+const MainCard = ({formattedAddress, rating}) => {
   return (
       <div className="container-d">
         <div className='container-da' style={{
@@ -65,3 +65,5 @@ export const MainCard = ({formattedAddress, rating}) => {
       </div>
   )
 }
+
+export default MainCard;

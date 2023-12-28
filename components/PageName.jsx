@@ -1,6 +1,6 @@
 import React from "react";
 
-export const PageName = () => {
+const PageName = () => {
   return (
       <div className="container-a" style={{
         display: 'grid',
@@ -11,3 +11,5 @@ export const PageName = () => {
       </div>
   )
 }
+
+export default PageName;
