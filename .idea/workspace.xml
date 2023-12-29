@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MainCard/MainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainCard/MainCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MapCard/MapCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MapCard/MapCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,7 @@
       <workItem from="1702943127040" duration="513000" />
       <workItem from="1703113490178" duration="5077000" />
       <workItem from="1703545285633" duration="4388000" />
-      <workItem from="1703760896357" duration="12975000" />
+      <workItem from="1703760896357" duration="23962000" />
     </task>
     <servers />
   </component>

@@ -28,6 +28,8 @@ export default async function Home() {
             rating={embassyData.result.rating}
         />
         <MapCard location={embassyData.result.geometry.location}/>
+        {/*
+        */}
         <Rankings/>
       </>
   )

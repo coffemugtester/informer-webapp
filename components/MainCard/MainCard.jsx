@@ -24,13 +24,13 @@ const MainCard = ({formattedAddress, rating}) => {
             </div>
           </div>
         </div>
-        <div className="mainCardRight">
+        <div className="mainCardRight" style={{ position: 'relative' }}>
           <Image
               src='/berlin.jpg'
-              height='1020'
-              width='1327'
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
               alt='berlin'
-              style={{objectFit: 'cover', objectPosition: 'center'}}
           />
         </div>
       </div>
